@@ -2,7 +2,7 @@ import React from 'react'
 import { useGSAP } from '@gsap/react'
 import ProjectCard from '../components/projects/ProjectCard'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/all';
 import { FaHeart, FaGlobe } from "react-icons/fa"
 
 import img1 from '../assets/images/image1.png'
@@ -44,10 +44,11 @@ const projects = [
         scrub: true
       }
     })
+    
   })
 
   return (
-    <div className='lg:p-4 p-2 bg-black text-white'>
+    <div className='lg:p-4 p-2 mb-[100vh] bg-black text-white'>
       {/* HEADER TITLE */}
       <div className='pt-[45vh]'>
         <h2 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase'>Projets</h2>
