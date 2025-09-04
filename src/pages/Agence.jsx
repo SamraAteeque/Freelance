@@ -12,10 +12,10 @@ const Agence = () => {
   const imageRef = useRef(null)
 
   const imageArray = [
-    '../../../public/image1.png',
-        '../../../public/image2.png',
-    '../../../public/image3.png',
-    '../../../public/image4.png',
+    '../../../image1.png',
+        '../../../image2.png',
+    '../../../image3.png',
+    '../../../image4.png',
   ]
 
   useGSAP(function () {
@@ -49,7 +49,7 @@ const Agence = () => {
       {/* PAGE 1 */}
       <div id='page1' className='py-1'>
         <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[28vw] h-[45vw] lg:rounded-3xl rounded-xl lg:w-[15vw] w-[35vw] lg:top-[20vh] top-[5vh] lg:left-[30vw] left-[30vw]'>
-          <img ref={imageRef} className='h-full object-cover w-full' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
+          <img ref={imageRef} className='h-full object-cover w-full' src="../../../image1.png" alt="" />
         </div>
         <div className='relative font-[font2]'>
           <div className='lg:mt-[55vh] mt-[30vh]'>
