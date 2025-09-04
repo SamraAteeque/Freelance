@@ -48,7 +48,7 @@ const projects = [
   })
 
   return (
-    <div className='lg:p-4 p-2 mb-[100vh] bg-black text-white'>
+    <div className='lg:p-4 p-2  bg-black text-white'>
       {/* HEADER TITLE */}
       <div className='pt-[45vh]'>
         <h2 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase'>Projets</h2>
