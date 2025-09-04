@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import ProjectCard from '../components/projects/ProjectCard'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaHeart, FaGlobe } from "react-icons/fa"
 
 import img1 from '../assets/images/image1.png'
