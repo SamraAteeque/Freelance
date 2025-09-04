@@ -4,20 +4,29 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { FaHeart, FaGlobe } from "react-icons/fa"
 
+import img1 from '../assets/images/image1.png'
+import img2 from '../assets/images/image2.png'
+import img3 from '../assets/images/image3.png'
+import img4 from '../assets/images/image4.png'
+
+
 const Projects = () => {
 
-  const projects = [{
-    image1: '../../../image2.png',
-    link1:'https://travelling-website-navy.vercel.app/',
-    image2: '../../../image3.png',
-    link2:'https://landing-page-kappa-eosin-50.vercel.app/'
-  }, 
-   {
-    image1: '../../../image4.png',
-    link1:'https://duo-plum.vercel.app/',
-    image2: '../../../image1.png',
+const projects = [
+  {
+    image1: img2,
+    link1: 'https://travelling-website-navy.vercel.app/',
+    image2: img3,
+    link2: 'https://landing-page-kappa-eosin-50.vercel.app/'
+  },
+  {
+    image1: img4,
+    link1: 'https://duo-plum.vercel.app/',
+    image2: img1,
     link2: 'https://magma-ruddy.vercel.app/'
-  }]
+  }
+]
+
 
   gsap.registerPlugin(ScrollTrigger)
 

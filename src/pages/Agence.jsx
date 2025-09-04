@@ -4,6 +4,13 @@ import { ScrollTrigger } from 'gsap/all'
 import { useRef } from 'react'
 import { FaHeart, FaGlobe } from "react-icons/fa"
 
+// ✅ Import images from assets
+import img1 from "../assets/images/image1.png";
+import img2 from "../assets/images/image2.png";
+import img3 from "../assets/images/image3.png";
+import img4 from "../assets/images/image4.png";
+
+
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -11,12 +18,8 @@ const Agence = () => {
   const imageDivRef = useRef(null)
   const imageRef = useRef(null)
 
-  const imageArray = [
-    '../../../image1.png',
-        '../../../image2.png',
-    '../../../image3.png',
-    '../../../image4.png',
-  ]
+   const imageArray = [img1, img2, img3, img4]; // ✅ Use imported images
+
 
   useGSAP(function () {
     gsap.to(imageDivRef.current, {
@@ -49,7 +52,7 @@ const Agence = () => {
       {/* PAGE 1 */}
       <div id='page1' className='py-1'>
         <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[28vw] h-[45vw] lg:rounded-3xl rounded-xl lg:w-[15vw] w-[35vw] lg:top-[20vh] top-[5vh] lg:left-[30vw] left-[30vw]'>
-          <img ref={imageRef} className='h-full object-cover w-full' src="../../../image1.png" alt="" />
+          <img ref={imageRef} className='h-full object-cover w-full' src={img1} alt="" />
         </div>
         <div className='relative font-[font2]'>
           <div className='lg:mt-[55vh] mt-[30vh]'>
