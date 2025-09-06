@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react'
 import { NavbarColorContext, NavbarContext } from '../../context/NavContext'
-import logo from "../../assets/images/c-removebg-preview.png";
+import logo from "../../assets/images/Logo.png";
 
 const Navbar = () => {
 

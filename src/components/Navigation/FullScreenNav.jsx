@@ -8,7 +8,7 @@ import img1 from '../../assets/images/image1.png';
 import img2 from '../../assets/images/image2.png';
 import img3 from '../../assets/images/image3.png';
 import img4 from '../../assets/images/image4.png';
-import logo from '../../assets/images/c-removebg-preview.png';
+import logo from '../../assets/images/Logo.png';
 const FullScreenNav = () => {
     const fullNavLinksRef = useRef(null)
     const fullScreenRef = useRef(null)
@@ -133,6 +133,27 @@ const FullScreenNav = () => {
                     <Link to="/agence" onClick={() => setNavOpen(false)} >
 <div className='link origin-top relative border-t-1 border-white'>
                             <h1 className='font-[font2] text-5xl lg:text-[6vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Agency</h1>
+                            <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
+                                <div className='moveX flex items-center'>
+                                    <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>To see it all</h2>
+                                    <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src={img1} alt="" />
+                                    <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>To see it all</h2>
+                                    <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src={img2} alt="" />
+                                </div>
+                                <div className='moveX flex items-center'>
+                                    <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>To see it all</h2>
+                                    <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src={img3} alt="" />
+                                    <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>To see it all</h2>
+                                    <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src={img4} alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </Link>
+
+                    <Link to="/testimonial" onClick={() => setNavOpen(false)} >
+<div className='link origin-top relative border-t-1 border-white'>
+                            <h1 className='font-[font2] text-5xl lg:text-[6vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Testimonial</h1>
                             <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                                 <div className='moveX flex items-center'>
                                     <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>To see it all</h2>

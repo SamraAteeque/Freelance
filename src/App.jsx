@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Agence from './pages/Agence'
 import Projects from './pages/Projects'
 import Contact from './pages/contact'
+import Testimonial from './pages/Testimonial'
 import Navbar from './components/Navigation/Navbar'
 import FullScreenNav from './components/Navigation/FullScreenNav'
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/agence' element={<Agence />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/testimonial' element={<Testimonial />} />
       </Routes>
     </div>
   )

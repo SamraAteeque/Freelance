@@ -87,7 +87,7 @@ const projects = [
           </div>
 
           {/* 3-column text */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-lg leading-relaxed max-w-6xl">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-lg leading-relaxed max-w-6xl">
             <p>
               <strong>My projects_</strong> are built with curiosity and passion.  
               Each idea grows into a solution that blends creativity with clean, scalable code.
@@ -100,11 +100,22 @@ const projects = [
               <strong>My culture_</strong> is about openness and growth.  
               I believe in building meaningful digital experiences that not only look good but also deliver real value to clients.
             </p>
-          </div>
+          </div> */}
+           {/* Video Section */}
+    <div className=" grid-cols-1 lg:grid-cols-3 gap-10 flex justify-center items-center">
+      <video
+        src="../../../Project.mp4" // replace with your video path
+        autoPlay
+        loop
+        muted
+        className="w-full max-w-4xl rounded-lg shadow-lg"
+      >
+        Your browser does not support the video tag.
+      </video>
+      </div>
         </div>
       </div>
-
-      {/* FOOTER */}
+ {/* FOOTER */}
       <footer className="bg-black text-white py-10 px-6 lg:px-20 border-t border-gray-800">
   {/* Top Social + Contact */}
   <div className="flex flex-col lg:flex-row justify-between items-center gap-8 mb-12">
@@ -162,7 +173,12 @@ const projects = [
   </div>
 </footer>
 
+
+
+
     </div>
+
+    
   )
 }
 
